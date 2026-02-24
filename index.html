@@ -28,9 +28,7 @@
           <input id="q" class="search" placeholder="検索（例：pandas, 継承, 差分）" />
         </div>
         <nav id="nav" class="nav"></nav>
-        <div class="sideFoot">
-          <small class="muted">クリックで切替（URLも変わる）</small>
-        </div>
+        <!-- クリックで切替（URLも変わる）は表示しない -->
       </aside>
 
       <section class="content">
@@ -40,11 +38,14 @@
 
         <section class="card gallery">
           <h2>Gallery</h2>
-          <p class="muted">熱伝導や可視化の画像/動画を後で置ける枠（pngやgif）</p>
+          <p class="muted">熱伝導や可視化の画像/動画</p>
+
+          <!-- 最小限：とりあえず4枚だけ表示（ファイル名はアップしたものに合わせて変更OK） -->
           <div class="galleryGrid">
-            <div class="ph">plot_01.png</div>
-            <div class="ph">heat_01.gif</div>
-            <div class="ph">surface_01.png</div>
+            <img class="gimg" src="comparison_euler_rk2.png" alt="Euler vs RK2" />
+            <img class="gimg" src="comparison_plot.png" alt="Time comparison" />
+            <img class="gimg" src="differentiation_OOP_N50.png" alt="Difference methods (N=50)" />
+            <img class="gimg" src="scene_box.png" alt="Shapes scene" />
           </div>
         </section>
 
