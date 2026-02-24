@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Programming Notes | Yuka</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="wrap header">
+    <div class="hero">
+      <div>
+        <h1>Programming Notes</h1>
+        <p class="sub">授業で学んだことを、短く・見返せる形で整理したノート</p>
+      </div>
+      <div class="heroBtns">
+        <a class="pill" href="https://github.com/USERNAME" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="pill" href="mailto:you@example.com">Email</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="layout">
+      <aside class="sidebar card">
+        <div class="sideTop">
+          <h2 class="sideTitle">Chapters</h2>
+          <input id="q" class="search" placeholder="検索（例：pandas, 継承, 差分）" />
+        </div>
+        <nav id="nav" class="nav"></nav>
+        <div class="sideFoot">
+          <small class="muted">クリックで切替（URLも変わる）</small>
+        </div>
+      </aside>
+
+      <section class="content">
+        <article id="view" class="card view">
+          <!-- JSが描画 -->
+        </article>
+
+        <section class="card gallery">
+          <h2>Gallery</h2>
+          <p class="muted">熱伝導や可視化の画像/動画を後で置ける枠（pngやgif）</p>
+          <div class="galleryGrid">
+            <div class="ph">plot_01.png</div>
+            <div class="ph">heat_01.gif</div>
+            <div class="ph">surface_01.png</div>
+          </div>
+        </section>
+
+        <footer class="wrap foot">
+          <small>© <span id="y"></span> Yuka</small>
+        </footer>
+      </section>
+    </section>
+  </main>
+
+  <script src="content.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
